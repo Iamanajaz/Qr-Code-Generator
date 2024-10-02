@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* background-image: url("728.svg"); */
+    background-image: url("bg1.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  
+}
+
+
+.container{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border: 1px solid white;
+    width: 500px;
+    height: 500px;
+    margin-left: 40%;
+    border-radius: 50px;
+    background-color: aqua;
+}
+.container h1{
+    font-family: sans-serif;
+    /* line-height: 25px; */
+    padding-top: 20px;
+    text-align: center;
+}
+.container .data{
+    padding: 10px 0px 20px 10px;
+    font-size: 20px;
+}
+.container #data{
+    width: 60%;
+    /* line-height: ; */
+    /* background: url(images/benice.png) center center no-repeat; This ruins default border */
+    border: 1px solid #888; 
+    margin-left: 20px;
+    padding: 5px 0px 0px 0px;
+    resize: none;
+    overflow: auto;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container .setbutton{
+    margin-left: 200px;
+}
+
+
+
+/* CSS */
+.container #gbutton {
+
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.container #gbutton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.container #gbutton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.container #gbutton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
