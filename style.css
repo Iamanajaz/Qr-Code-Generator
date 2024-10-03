@@ -17,7 +17,16 @@ body{
     border: 1px solid white;
     width: 500px;
     height: 500px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+  padding: 10px;
+
+
     border-radius: 50px;
     background-color: aqua;
 }
@@ -33,8 +42,7 @@ body{
 }
 .container #data{
     width: 60%;
-    /* line-height: ; */
-    /* background: url(images/benice.png) center center no-repeat; This ruins default border */
+
     border: 1px solid #888; 
     margin-left: 20px;
     padding: 5px 0px 0px 0px;
@@ -44,7 +52,12 @@ body{
     box-sizing: border-box;
 }
 .container .setbutton{
-    margin-left: 200px;
+    
+    position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 
