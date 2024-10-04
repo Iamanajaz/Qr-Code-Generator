@@ -4,8 +4,9 @@
 }
 
 body{
-    /* background-image: url("728.svg"); */
-    background-image: url("bg1.jpg");
+  /* background-image: url("728.svg"); */
+  background-image: url("bg1.jpg");
+  /* background-attachment: fixed; */
   background-repeat: no-repeat, repeat;
   background-color: #cccccc;
   
@@ -26,25 +27,29 @@ body{
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.548);
 }
 .container h1{
-  font-family: sans-serif;
   /* line-height: 50px; */
-  /* padding-top: 10px; */
+  font-size: 40px;
+  padding-bottom: 20px;
+
   font-weight: 800;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-.container .data{
-  padding: 10px 0px 20px 10px;
+.container .datainput{
+  padding: 10px 0px 10px 10px;
   font-size: 20px;
 }
 .container #data{
   width: 100%;
-
+  font-size: 13px;
   border: 1px solid #888; 
-  font-size:large;
-  padding: 15px 0px 0px 0px;
+  /* font-size:large; */
+  padding: 8px 0px 8px 0px;
   resize: none;
   overflow: auto;
-  border-radius: 4px;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
@@ -52,6 +57,22 @@ body{
   font-size: 18px;
   text-align: center;
 
+}
+
+.sizesection{
+  /* margin: auto; */
+  /* align-items: center; */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding-bottom: 18px;
+}
+
+#size{
+  width: 115px;
+  padding: 5px 0px;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 
@@ -103,6 +124,6 @@ body{
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
-#imgbox{
-  margin-top: 5%;
-}
+  #imgbox{
+    margin-top: 5%;
+  }
