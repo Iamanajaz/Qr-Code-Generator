@@ -12,7 +12,7 @@
 
 
 function go(){
-    document.getElementById("qrimg").src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+data.value;
+    document.getElementById("qrimg").src="https://api.qrserver.com/v1/create-qr-code/?size="+size.value+"&data="+data.value;
     console.log(data.value);
     // console.log(size.value);
 }
