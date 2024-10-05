@@ -13,7 +13,7 @@
 
 function go(){
     document.getElementById("qrimg").src="https://api.qrserver.com/v1/create-qr-code/?size="+size.value+"&data="+data.value;
-    console.log(data.value);
-    // console.log(size.value);
+    console.log("Input text:",data.value);
+    console.log("Size of Qr image:",size.value);
 }
 
