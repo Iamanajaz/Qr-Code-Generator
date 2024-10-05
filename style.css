@@ -1,42 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qr Code </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-<body>
-    <div class="container">
-        <h1>Qr Code <br> Generator</h1>
-        <div class="datainput">
-            <textarea name="inputdata" rows="5" id="data"> </textarea>
-        </div>
-     
-        <br>
-        <div class="sizesection">
-            <label for="imgsize">Size of QR Code</label>
-            <select name="imgsize" id="size">
-            <option value="100x100" selected>Small</option>
-            <option value="150x150">Normal</option>
-            <option value="200x200">Average</option>
-            <option value="250x250"> Maximum</option>
-            </select>
-        </div>
-        
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
-       <div class="setbutton"> <button id="gbutton" onclick="go()" >Generate</button></div>
+body{
+  /* background-image: url("728.svg"); */
+  background-image: url("bg1.jpg");
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  
+}
 
-       <div id="imgbox"> <center><img src="" id="qrimg"></center></div>
 
-    </div>
+.container{
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  width: 50%;
+  max-width: 500px;
+  border-radius: 40px;
+  background-color: #fff;
+  padding: 40px 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.548);
+}
+.container h1{
+  /* line-height: 50px; */
+  font-size: 40px;
+  padding-bottom: 20px;
+
+  font-weight: 800;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container .datainput{
+  padding: 10px 0px 10px 10px;
+  font-size: 20px;
+}
+.container #data{
+  width: 100%;
+  font-size: 13px;
+  border: 1px solid #888; 
+  /* font-size:large; */
+  padding: 8px 0px 8px 0px;
+  resize: none;
+  overflow: auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+.sizesection{
+  /* margin: auto; */
+  /* align-items: center; */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding-bottom: 18px;
+}
+
+#size{
+  width: 115px;
+  padding: 5px 0px;
+  font-weight: 400;
+  font-size: 12px;
+}
+select{
+  border-radius: 5px;
+}
+
+
+/* CSS */
+.container #gbutton {
+  
+  width: 100%;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.container #gbutton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.container #gbutton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.container #gbutton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#imgbox{
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 320px) {
+  
+  .container h1 {
     
+  font-size: 32px;
+  padding-bottom:1px;
+ 
+}
 
-
-    <!-- site is under maintenance -->
-</body>
-</html>
+.sizesection {
+  padding-bottom: 11px;
+}
+#imgbox{
+  margin-top: 3%;
+}
+.container {
+  margin-top: 10px;
+  padding: 15px 40px;
+  
+}
+}
