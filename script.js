@@ -12,8 +12,14 @@
 
 
 function go(){
-    document.getElementById("qrimg").src="https://api.qrserver.com/v1/create-qr-code/?size="+size.value+"&data="+data.value;
-    console.log("Input text:",data.value);
-    console.log("Size of Qr image:",size.value);
+    
+    let dataval=data.value;
+    if(dataval != null ){
+       document.getElementById("qrimg").src="https://api.qrserver.com/v1/create-qr-code/?size="+size.value+"&data="+dataval;
+        console.log("Input text:",dataval);
+        console.log("Size of Qr image:",size.value); 
+    }
+    else{
+        alert("Text box is empty");
+    }
 }
-
