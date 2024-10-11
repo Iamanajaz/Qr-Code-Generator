@@ -20,6 +20,7 @@ function go(){
         console.log("Size of Qr image:",size.value); 
     }
     else{
+        
         alert("Text box is empty");
     }
 }
