@@ -19,8 +19,5 @@ function go(){
         console.log("Input text:",dataval);
         console.log("Size of Qr image:",size.value); 
     }
-    else{
-        
-        alert("Text box is empty");
-    }
+  
 }
