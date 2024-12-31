@@ -1,4 +1,4 @@
-# Qr-Code-Generator
+# [Qr-Code-Generator](https://bit.ly/iaman-qrcode)
 
 This project is a simple QR Code Generator built with HTML, CSS, and JavaScript. The application allows users to input text and generate a QR code of varying sizes. The generated QR code can be viewed directly in the browser.
 ## Features
