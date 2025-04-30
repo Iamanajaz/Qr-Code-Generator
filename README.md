@@ -1,9 +1,9 @@
-# [Qr-Code-Generator](https://bit.ly/iaman-qrcode)
+# [Easy-Qr-Maker](https://bit.ly/iaman-qrcode)
 
 This project is a simple QR Code Generator built with HTML, CSS, and JavaScript. The application allows users to input text and generate a QR code of varying sizes. The generated QR code can be viewed directly in the browser.
 ## Features
 - Dynamic QR Code Generation: Users can enter any text, and a QR code is dynamically generated.
--  Customizable Sizes: QR codes can be generated in four different sizes (Small, Normal, Average, Maximum).
+- Customizable Sizes: QR codes can be generated in four different sizes (Small, Normal, Average, Maximum).
 - User-Friendly Interface: Clean and straightforward design for easy use.
 ## How It Works
 1.	Enter the text you want to encode into the QR code in the text area provided.
