@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qr Code </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+
 <body>
     <div class="container">
         <h1>Qr Code <br> Generator</h1>
         <div class="datainput">
-            <textarea autofocus name="inputdata" rows="5" id="data" required> </textarea>
+            <textarea autofocus name="inputdata" rows="5" id="data" placeholder="Type here..."></textarea>
         </div>
-     
+
         <br>
         <div class="sizesection">
             <label for="imgsize">Size of QR Code</label>
             <select name="imgsize" id="size">
-            <option value="100x100" selected>Small</option>
-            <option value="150x150">Normal</option>
-            <option value="200x200">Average</option>
-            <option value="250x250"> Maximum</option>
+                <option value="100x100">Small</option>
+                <option value="150x150" selected>Normal</option>
+                <option value="180x180">Average</option>
+                <option value="230x230"> Maximum</option>
             </select>
         </div>
 
-       <div class="setbutton"> <button id="gbutton" onclick="go()" >Generate</button></div>
-       
+        <div class="setbutton"> <button id="gbutton" class="generate" onclick="go()">Generate</button>
+            <button id="gbutton" class="reset" onclick="reset()">Reset</button>
+        </div>
 
-       <div id="imgbox"> <center><img src="" id="qrimg"></center></div>
+
+        <div id="imgbox"> <img src="" id="qrimg"></div>
+
     </div>
-    
+
+
+
+    <!-- site is under maintenance -->
 </body>
+
 </html>
